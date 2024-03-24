@@ -76,7 +76,6 @@ if (navigator.msMaxTouchPoints) {
             });
 
         },
-        //   console.log('event',event.touches[0].clientX)
 
         start: function (event) {
 
@@ -119,7 +118,6 @@ if (navigator.msMaxTouchPoints) {
                 }
             }
 
-            console.log('index',this.index);
             this.el.holder.classList.add("animate");
             this.el.holder.style.transform = `translate3d(-${this.index * this.slideWidth}px,0,0)`;
             this.el.imgSlide.classList.add("animate");
@@ -139,7 +137,6 @@ if (navigator.msMaxTouchPoints) {
 
             // 
 
-            // console.log('this.slides', this.slides, this.index)
             // this.slides[lastIndex].style.transition = "transform 1s ease;"
             slider.animateTextBox();
             slider.animateBgImg();
