@@ -1,0 +1,207 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+}
+
+body {
+    overflow: hidden;
+}
+
+.bg-img {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.slide:hover {
+    transform: scale(0);
+    /* Scale to 0 on hover */
+}
+
+.section {
+    overflow-y: hidden;
+}
+
+.para {
+    font-family: 'Roboto';
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+h2.title {
+    line-height: 1;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.holder {
+    display: flex;
+}
+
+.carousal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.carousal img {
+    border-radius: 20px;
+    height: 240px;
+    width: 140px;
+    object-fit: cover;
+}
+
+.text {
+    padding: 12px 15px;
+    background: #0000006b;
+    border-radius: 5px;
+    color: #fff;
+    flex: 30;
+    height: 210px;
+    margin-left: 20px;
+    width: 130px;
+    transform: scale(1);
+
+}
+
+
+/* slider */
+
+.animate {
+    transition: transform 0.3s ease-out;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-size: cover;
+    background: #000;
+
+}
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider-wrap {
+    width: 180px;
+    /* height: 500px; */
+    /* position: absolute; */
+    /* left: 50%; */
+    margin-left: 20px;
+    /* top: 50%; */
+    /* margin-top: -225px; */
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ms-touch.slider {
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    -ms-overflow-style: none;
+    /* Hides the scrollbar. */
+
+    -ms-scroll-chaining: none;
+    /* Prevents Metro from swiping to the next tab or app. */
+
+    -ms-scroll-snap-type: mandatory;
+    /* Forces a snap scroll behavior on your images. */
+
+    -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+    /* Defines the y and x intervals to snap to when scrolling. */
+}
+
+.holder {
+    width: 500%;
+    max-height: 240px;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.slide-wrapper {
+    height: 100%;
+    float: left;
+    height: 240px;
+    width: 140px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slide {
+    height: 100%;
+    position: relative;
+}
+
+.temp {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 100px;
+    bottom: 15px;
+    left: 15px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 100;
+}
+
+.slide img {
+    position: absolute;
+    z-index: 0;
+    /* transform: translatex(-100px); */
+    height: 240px;
+    width: 140px;
+    object-fit: cover;
+
+}
+
+/* .slide:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(transparent, black);
+} */
+
+.slide div {
+    width: 300px;
+    height: 500px;
+    z-index: 0;
+}
